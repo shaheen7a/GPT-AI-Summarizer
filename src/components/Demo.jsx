@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import { copy, linkIcon, loader, tick } from "../assets";
 import { useLazyGetSummaryQuery } from "../services/article";
@@ -11,10 +11,8 @@ const Demo = () => {
   const [allArticles, setAllArticles] = useState([]);
   const [copied, setCopied] = useState("");
 
-  // RTK lazy query
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
-  // Load data from localStorage on mount
   useEffect(() => {
     const articlesFromLocalStorage = JSON.parse(
       localStorage.getItem("articles")
@@ -59,7 +57,7 @@ const Demo = () => {
 
   return (
     <section className="mt-16 w-full max-w-xl">
-      {/* Search */}
+
       <div className="flex flex-col w-full gap-2">
         <form
           className="relative flex justify-center items-center"
@@ -88,7 +86,7 @@ const Demo = () => {
           </button>
         </form>
 
-        {/* Browse History */}
+
         <div className="flex flex-col gap-1 max-h-60 overflow-y-auto">
           {allArticles.reverse().map((item, index) => (
             <div
@@ -111,13 +109,13 @@ const Demo = () => {
         </div>
       </div>
 
-      {/* Display Result */}
+      
       <div className="my-10 max-w-full flex justify-center items-center">
         {isFetching ? (
           <img src={loader} alt="loader" className="w-20 h-20 object-contain" />
         ) : error ? (
           <p className="font-inter font-bold text-black text-center">
-            Well, that wasn't supposed to happen...
+            Well, that was not supposed to happen...
             <br />
             <span className="font-satoshi font-normal text-gray-700">
               {error?.data?.error}
