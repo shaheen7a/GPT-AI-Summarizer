@@ -3,7 +3,7 @@
 
 Thanks for checking out this Application.
 
-![AI-Summarizer](./showcase/view01.png)
+![AI-Summarizer](./src//showcase//view01.png)
 
 ## Overview
 Simplify your reading with Summize, an open-source article summarizer that transforms lengthy articles into clear and concise summaries
