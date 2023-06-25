@@ -6,7 +6,7 @@ Thanks for checking out this Application.
 ![AI-Summarizer](./src//showcase//view01.png)
 
 ## Overview
-Simplify your reading with Summize, an open-source article summarizer that transforms lengthy articles into clear and concise summaries
+Summize is an open-source article summarizer that can help you simplify your reading. It transforms lengthy articles into clear and concise summaries, so you can get the key points without having to read the entire article. With Summize, you can save time and focus on the most important information in any article. Whether you're a student, a busy professional, or just someone who wants to stay informed, Summize is a great tool for simplifying your reading.
 
 ### Links
 
